@@ -16,7 +16,7 @@ const biciDaCorsa = [
 
 // Stampo tutti gli elementi di un array
 
-let pesi = []
+let pesi = [];
 let numeroPiccolo;
 for(let i = 0; i< biciDaCorsa.length; i++){
 
