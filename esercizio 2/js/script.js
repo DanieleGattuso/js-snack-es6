@@ -31,6 +31,17 @@ for(let i= 0; i< squadreDiCalcio.length; i++){
 }
 console.log(squadreDiCalcio);
 
+let nameFouls = []
+
+for(let key in squadreDiCalcio){
+
+    console.log(squadreDiCalcio[key]);
+
+    nameFouls.push(squadreDiCalcio[key].puntiFatti)
+    nameFouls.push(squadreDiCalcio[key].falliSubiti)
+    
+}
+console.log(nameFouls);
 
 
 
