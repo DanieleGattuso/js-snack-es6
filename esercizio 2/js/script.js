@@ -17,3 +17,38 @@ const squadreDiCalcio = [
 ];
 
 console.log(squadreDiCalcio);
+
+
+// Creo un ciclo for per visualizzare tutti gli elementi di un array
+
+
+for(let i= 0; i< squadreDiCalcio.length; i++){
+
+    // Utilizzando la funzione creata prima, egenro dei numeri casuali e li sostituisco a quelli presenti in punti fatti e falli subiti
+    squadreDiCalcio[i].puntiFatti = randomNumber(1, 6)
+    squadreDiCalcio[i].falliSubiti= randomNumber(1, 4)
+    
+}
+console.log(squadreDiCalcio);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Creo una funzione per generare un numero casuale
+
+function randomNumber(min, max) {
+
+    return Math.floor(Math.random() *max + min) 
+ }
+
+  
+  
