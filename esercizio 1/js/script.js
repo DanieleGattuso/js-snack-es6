@@ -7,7 +7,7 @@
 
 const biciDaCorsa = [
     { nome: "Bianchi Oltre XR4", peso: 9 },
-    { nome: "Specialized Tarmac SL7", peso: 8 },
+    { nome: "Specialized Tarmac SL7", peso: 3 },
     { nome: "Pinarello Dogma F", peso: 6 },
     { nome: "Cannondale SuperSix EVO", peso: 7 },
     { nome: "Trek Émonda SLR", peso: 5 }
@@ -16,12 +16,18 @@ const biciDaCorsa = [
 
 // Stampo tutti gli elementi di un array
 
+let pesi = []
+let numeroPiccolo;
 for(let i = 0; i< biciDaCorsa.length; i++){
 
-    console.log(biciDaCorsa[i]);
+    pesi.push(biciDaCorsa[i].peso) 
+    
+    
     
 }
 
+let numeroPiuPiccolo = Math.min(...pesi);
+console.log(numeroPiuPiccolo);
 
 
 
